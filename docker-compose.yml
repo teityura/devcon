@@ -1,0 +1,11 @@
+services:
+  app:
+    container_name: app
+    build:
+      context: .
+      args:
+        IMAGE: ${IMAGE}
+    volumes:
+      - ./volumes/app:/app
+    tty: true
+
